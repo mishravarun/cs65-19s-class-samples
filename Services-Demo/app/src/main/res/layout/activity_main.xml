@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnStartService1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="13dp"
+        android:onClick="onStartService1"
+        android:text="Start Service 1"/>
+    <Button
+        android:id="@+id/btnStopService1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="13dp"
+        android:onClick="onStopService1"
+        android:text="Stop Service 1"/>
+    <Button
+        android:id="@+id/btnStartService2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="13dp"
+        android:onClick="onStartForegroundService"
+
+        android:text="Start Foreground Service"/>
+    <Button
+        android:id="@+id/btnStopService2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="13dp"
+        android:onClick="onStopForegroundService"
+
+        android:text="Stop Foreground Service"/>
+    <Button
+        android:id="@+id/btnStartService3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="13dp"
+        android:onClick="onStartBoundService"
+
+        android:text="Start Bound Service"/>
+    <Button
+        android:id="@+id/btnStopService3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="13dp"
+        android:onClick="onStopBoundService"
+
+        android:text="Stop Bound Service"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Count -- "
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tvCount"/>
+
+        <Button
+            android:id="@+id/btnRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onBtnRefresh"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+
+            android:text="Refresh Count"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
